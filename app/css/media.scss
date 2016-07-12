@@ -1,0 +1,36 @@
+figure > img{
+	width: 100%;
+	margin-left: 0%
+}
+
+.wide > figure{
+	width: 100%;
+	margin-left: 0%;
+}
+
+.full > figure{
+	margin-left: 0%;
+}
+
+.lead-img{
+	top: 0;
+	text-align: center;
+}
+
+.lead-text{
+	text-align: center;
+}
+
+.lead-overlay{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+
+
+	.overlay-text{
+		position: relative;
+		bottom: 0em;
+		height: 110%;
+		margin-top: -15%;
+
+	}
+}

@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 0em;
+  /*font-weight: 100*/ }
+
+h2, h3, h4, h5, h6, figcaption {
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: .25em;
+  margin-bottom: 0em; }
+
+h3 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: 500; }
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 1.5em;
+  font-weight: 900; }
+
+h5, figcaption {
+  font-size: 1em; }
+
+h5 {
+  font-weight: 400;
+  line-height: 1.5em; }
+
+h6 {
+  color: #666666;
+  font-size: 1em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  opacity: .6; }
+
+h6.date {
+  color: #666666;
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: 1.5em; }
+
+p {
+  font-family: 'lora', serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin-top: 1em; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+a:hover {
+  color: #337ab7; }
+
+b {
+  font-weight: 900; }
+
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f9f2f4;
+  border-radius: .25rem; }
+
+.dropcap {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  float: left;
+  font-size: 4em;
+  line-height: .8em;
+  margin-top: .01em;
+  margin-right: .1em;
+  padding: 0; }
+
+figcaption {
+  margin-top: .75em;
+  margin-bottom: 1.5em; }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>template index page</title>
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/type.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/alignment.css">
+	<link rel="stylesheet" href="../css/media.css">
+	
+
+	<!--endbuild-->
+
+
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Lato|Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<div class="inline">
+
+		<h1>Alignment</h1>
+		<h2>link to stand alone example</h2>
+
+
+		<p>There are six places you can use for layout and the css is found in <code>alignment.css</code>. Click here for a version of this page with background colors for all elements. This will help get a sense of how they respond to each other.</p>
+
+		<h3>Inline</h3>
+		<p>Inline is the main column on the screen. You can use it as a wrapper or go wider with the <code>wide</code> or <code>full</code> classes. You can also divide it up internally with <code>aside</code>.</p>
+
+		<h3>Asides</h3>
+		<p>There are three type of asides, two that go inside the inline column and one that does not. For each type, there are two sepearte classes for right and left. The two inline are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. The <code>aside class="left"</code> placed outside of the inline column will  </p>
+		<aside class="right">
+			<h2>Aside class right</h2>
+		</aside>
+
+		<aside class="left">
+			<h2>Aside class left</h2>
+		</aside>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+		
+		<aside class="right-wide">
+			<h2>Aside class right-wide</h2>
+		</aside>
+
+		<aside class="left-wide">
+			<h2>Aside class left-wide</h2>
+		</aside>
+		
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+
+	<aside class="left">
+		<h2>Aside class left, outside of the inline div</h2>
+	</aside>
+
+	<aside class="right">
+		<h2>Aside class right, outside of the inline div</h2>
+	</aside>
+
+	<div class="inline">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+	
+	
+
+	
+
+	
+	<div class="wide">
+		<h3>Wide class</h3>
+		<p>The <code>wide</code> class is usually used for media or graphics. You can either place a figure inside a <code>wide</code> div or apply the class to the figure itself.</p>	
+	</div>
+
+	<figure class="wide">
+			<img src="img/test.jpg" alt="">
+	</figure>
+
+
+	
+	<div class="full">
+		<h3>full</h3>
+		<p>The <code>full</code> class is a fullscreen alignment best used for media.</p>
+
+		<figure class="full">
+			<img src="img/test.jpg" alt="">
+		</figure>
+	</div>
+
+	
+	<div class="inline">
+		<figcaption>Align accomapnying text underneath in an inline column</figcaption>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+
+		<h3>Make your own</h3>
+		<p>We can also add classes quickly to make our own grid. I like to stick to percentages for the width and have everything float left.</p>
+	</div>
+	
+	<div class="grid-wrap">
+		<figure class="grid2">
+			<img src="img/test.jpg" alt="">
+			<figcaption>custom class</figcaption>
+		</figure>
+
+		<figure class="grid2">
+			<img src="img/test.jpg" alt="">
+			<figcaption>custom class</figcaption>
+		</figure>
+	</div>
+
+
+
+
+
+
+<!--build:js js/main.min.js -->	
+<script src="../js/test.js"></script>
+<script src="../js/test2.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

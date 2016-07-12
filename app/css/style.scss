@@ -1,0 +1,39 @@
+// Defining values
+$sm-min: 768px;
+$xs-max: ($sm-min - 1);
+$md-min: 992px;
+$sm-max: ($md-min - 1);
+$lg-min: 1200px;
+$md-max: ($lg-min - 1);
+
+.doc-intro{
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 1em;
+	background-color: #BE4C39;
+
+	h1, h2, h6{
+		width: 60%;
+		margin-left: 20%;
+		color: white;
+		opacity: 1;
+	}
+
+	h6{
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		margin-top: 0em;
+	}
+	
+
+}
+
+@media (max-width: $xs-max) {
+	.doc-intro{
+		h1,h2,h6{
+			width: 85%;
+			margin-left: 7.5%;
+		}
+	}
+}
