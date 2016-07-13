@@ -5,12 +5,21 @@ body {
   padding: 0;
   margin: 0; }
 
-.inline {
+article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article {
   width: 60%;
   margin-left: 20%;
   margin-top: 0%;
-  margin-bottom: 0%; }
-  .inline aside {
+  margin-bottom: 0%;
+  margin-top: 1em; }
+  article aside {
     width: 30%; }
 
 aside {
@@ -35,19 +44,17 @@ aside {
   float: right;
   width: 30%;
   margin-right: -17%;
-  margin-left: 1.5em;
-  margin-top: 0em; }
+  margin-left: 1.5em; }
 
 .left-wide {
   float: left;
-  width: 3%;
+  width: 30%;
   margin-left: -17%;
   margin-right: 1.5em; }
 
 .wide {
   width: 75%;
   margin-left: 15%;
-  margin-top: 0%;
   margin-bottom: 0%; }
 
 .full {
@@ -79,10 +86,10 @@ hr {
   margin-bottom: 2em; }
 
 @media (max-width: 767px) {
-  .inline {
+  article {
     min-width: 85%;
     margin-left: 7.5%; }
-    .inline .right {
+    article .right {
       float: right; }
   .right {
     float: left;
@@ -93,7 +100,6 @@ hr {
   aside {
     width: 85%;
     margin-left: 7.5%;
-    margin-top: 0%;
     margin-bottom: 0%; }
   .left-wide {
     float: left;

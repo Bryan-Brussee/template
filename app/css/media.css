@@ -1,3 +1,11 @@
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 figure > img {
   width: 100%;
   margin-left: 0%; }
@@ -15,12 +23,3 @@ figure > img {
 
 .lead-text {
   text-align: center; }
-
-.lead-overlay {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); }
-  .lead-overlay .overlay-text {
-    position: relative;
-    bottom: 0em;
-    height: 110%;
-    margin-top: -15%; }
