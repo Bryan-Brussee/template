@@ -44,30 +44,33 @@
 				</li>
 			</a>
 
-			<a href="http://www.twitter.com" class="popup">
-				<li class="social twitter-logo">
-					<img src="img/w.twitter.svg" alt="">
+			<a href=# class="popup">
+				<li class="social comments-logo">
+					<img src="img/w.comments.svg" alt="">
 				</li>
 			</a>
 
 			
 		</ul>
 		
-		<h4 class="title">Longform template</h4>
-		
-		<!-- <div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn" >
+		<div class="title">
+			<h4>Longform template</h4>
+
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn" >
+					<!-- <img src="img/arrow_down.svg" alt=""> -->
+				</button>
 				
-			</button>
-			
-			<h4>
-				<div id="dropdown" class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				</div>
-			</h4>
-		</div> -->
+				<h4>
+					<div id="dropdown" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</h4>
+			</div>
+		</div>
+
 
 		
 		<progress value="0"></progress>
@@ -166,10 +169,12 @@
 		<h3>full</h3>
 		<p>The <code>full</code> class is a fullscreen alignment best used for media.</p>
 
+		
+	</div>
+
 		<figure class="full">
 			<img src="img/test.jpg" alt="">
 		</figure>
-	</div>
 		<div id="nav_visible1"></div>
 
 	
@@ -252,14 +257,127 @@
 	
 
 	<article>
+		<h1>Media </h1>
+		<br>
+		<p>Images and videos are first placed in a <code>figure</code> to scale, and then this figure can be aligned where ever you like.</p>
+
+		<figure>
+			<img src="img/test.jpg" alt="">
+			<figcaption>
+				Regular image
+			</figcaption>
+		</figure>
+
+		<aside class="right-wide">
+			<figure>
+				<img src="img/test.jpg" alt="">
+				<figcaption>
+					Aside image
+				</figcaption>
+			</figure>
+		</aside>
+
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
 	</article>
+
+	<figure class="wide">
+		<img src="img/test.jpg" alt="">
+		<figcaption>
+			Wide image caption
+		</figcaption>
+	</figure>
+
+	<figure class="full">
+		<img src="img/test.jpg" alt="">
+		<article>
+			<figcaption>
+				Full image and caption inline with article
+			</figcaption>	
+		</article>
+	</figure>
+
+	<article>
+		<h1>Compontents</h1>
+		
+		<h3>Pulled quotes</h3>
+		<aside class="right-wide">
+			<h2>If you want a pulledquote tweetable, keep it + url under 140 characters</h2>
+			<h6>James Benedict</h6>
+
+			<figure class="share">
+				<img src="img/b.twitter.svg" alt="">
+				<img src="img/facebook.f.svg" alt="">
+			</figure>
+
+		</aside>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+		<h3>Related content</h3>
+
+		<aside class="right related">
+			<h5>Related content</h5>
+			<figure>
+				<img src="img/test.jpg" alt="">
+			</figure>
+			<a href=""><h1>A story headline goes here</h1></a>
+		</aside>
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+
+		<h3>Static table</h3>
+			<table>
+				    <thead>
+				        <tr>
+				            <th>Category</th>
+				            <th>January</th>
+				            <th>February</th>
+				            <th>March</th>
+				        </tr>
+				    </thead>
+				    <tr>
+				        <td data-title="Category">Total</td>
+				        <td data-title="Jan">1</td>
+				        <td data-title="Feb">2</td>
+				        <td data-title="Mar">3</td>
+				    </tr>
+				    <tr>
+				        <td data-title="Category">Less than a high school diploma</td>
+				        <td data-title="Jan">1</td>
+				        <td data-title="Feb">2</td>
+				        <td data-title="Mar">3</td>
+				    </tr>
+				    <tr>
+				        <td data-title="Category">High school graduates, no college</td>
+				        <td data-title="Jan">1</td>
+				        <td data-title="Feb">2</td>
+				        <td data-title="Mar">3</td>
+				    </tr>
+				    <tr>
+				        <td data-title="Category">Some college or associate degree</td>
+				        <td data-title="Jan">1</td>
+				        <td data-title="Feb">2</td>
+				        <td data-title="Mar">3</td>
+				    </tr>
+				    <tr>
+				        <td data-title="Category">Bachelor&rsquo;s degree and higher</td>
+				        <td data-title="Jan">1</td>
+				        <td data-title="Feb">2</td>
+				        <td data-title="Mar">3</td>
+				    </tr>
+				</table>
+		
+	</article>
+
+
+
 
 
 
 
 <!--build:js js/main.min.js -->	
 <script src="js/jquery-2.1.4.min.js"></script>
+
 <script src="js/navbar.js"></script>
 <script src="js/dropdown.js"></script>
 <script src=js/popup.js></script>

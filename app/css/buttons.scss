@@ -27,15 +27,22 @@
 .show {display:block;}
 
 .dropbtn{
-    width: 0px;
-    height: 0px;
+    width: 100%;
+    height: auto;
     background-color: transparent;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 0px;
-    border-top: 10px solid black;
+    border: none;
+    // border-left: 4px solid transparent;
+    // border-right: 4px solid transparent;
+    // border-bottom: 0px;
+    // border-top: 10px solid black;
     cursor: pointer;
     &:hover, &:focus{
         // background-color: #BE4C39;
     }   
+}
+
+.dropbtn img{
+    margin: 0em;
+    max-height: 15px;
+    max-width: 15px;
 }

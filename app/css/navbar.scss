@@ -1,7 +1,6 @@
 nav{
 	position: fixed;
 	top: 0;
-
 	-webkit-transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
@@ -32,13 +31,19 @@ nav{
 		top: 8px;
 	}
 
-	li .title{
+	.title{
 		// display: inline-block;
 		position: absolute;
 		width: 100%;
 		text-align: center;
 		z-index: -1;
 	}
+
+	.title h4{
+		margin-right: 50px;
+	}
+
+
 
 	#logo img{
 		position: relative;
