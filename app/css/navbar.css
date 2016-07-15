@@ -32,7 +32,7 @@ nav {
     text-align: center;
     z-index: -1; }
   nav .title h4 {
-    margin-right: 50px; }
+    margin-right: 5%; }
   nav #logo img {
     position: relative;
     z-index: 1;
@@ -52,6 +52,8 @@ nav {
     margin-left: 20px;
     margin-top: 12%;
     margin-bottom: 7%; }
+  nav .xs-menu {
+    display: none; }
 
 .invisible {
   -webkit-transition: all 0.25s ease;
@@ -74,11 +76,13 @@ nav {
   .invisible progress::-moz-progress-bar {
     opacity: 0; }
   .invisible .dropbtn {
-    border-top: 10px solid transparent; }
+    border-top: 10px solid transparent;
+    background: transparent; }
 
 progress {
   /* Positioning */
   position: fixed;
+  z-index: -1;
   left: 0;
   top: 35px;
   /* Dimensions */
@@ -106,3 +110,12 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background-color: #666666;
   opacity: .6; }
+
+@media (max-width: 767px) {
+  nav li.social {
+    display: none; }
+  nav li.xs-menu {
+    display: inline;
+    position: relative;
+    float: right;
+    right: 15; } }

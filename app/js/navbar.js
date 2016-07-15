@@ -1,3 +1,4 @@
+// progress bar
 $(document).on('ready', function() {  
   var winHeight = $(window).height(), 
       docHeight = $(document).height(),
@@ -14,7 +15,7 @@ $(document).on('ready', function() {
   });
 });
 
-
+// Changes between visible and invisible
 $(document).on('ready', function() {
 	var winHeight = $(window).height(), 
      	docHeight = $(document).height(),
@@ -35,12 +36,10 @@ $(document).on('ready', function() {
      		if (position == 0) { 
      			$('nav').addClass('transparent');
 
-     			
-
      		} else if ((position > startChange.top && position < endChange.top)){
      			$('nav').addClass('invisible');
                 $("#logo").html("<img src='../img/w.logo.svg'>");
-                $(".dropbtn").html("<img src=''>");
+                // $(".dropbtn").html("<img src=''>");
                 $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
                 $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
                 $(".comments-logo").html("<img src='../img/w.comments.svg'>");
@@ -49,7 +48,7 @@ $(document).on('ready', function() {
      		} else if ((position > startChange1.top && position < endChange1.top)){
      			$('nav').addClass('invisible');
                 $("#logo").html("<img src='../img/w.logo.svg'>");
-                $(".dropbtn").html("<img src=''>");
+                // $(".dropbtn").html("<img src=''>");
                 $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
                 $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
                 $(".comments-logo").html("<img src='../img/w.comments.svg'>");	
@@ -57,18 +56,18 @@ $(document).on('ready', function() {
      		} else{
      			$('nav').removeClass('invisible');
      			$("#logo").html("<img src='../img/b.logo.svg'>");
-                $(".dropbtn").html("<img src='../img/arrow_down.svg'>");
+                // $(".dropbtn").html("<img src='../img/arrow_down.svg'>");
 
 
 		        $(".twitter-logo").html("<img src='../img/b.twitter.svg'>");
 		        $(".fb-logo").html("<img src='../img/b.facebook.svg'>");
                 $(".comments-logo").html("<img src='../img/b.comments.svg'>");
-     		}
-     	
+     		} 	
      	});
-
-
 });
+
+// hamburger logo
+
 
 
 

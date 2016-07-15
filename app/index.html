@@ -49,6 +49,12 @@
 					<img src="img/w.comments.svg" alt="">
 				</li>
 			</a>
+		
+			<li class="xs-menu">
+				<p>ahs</p>
+				
+			</li>
+
 
 			
 		</ul>
@@ -57,17 +63,18 @@
 			<h4>Longform template</h4>
 
 			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn" >
-					<!-- <img src="img/arrow_down.svg" alt=""> -->
+				<button onclick="myFunction()" class="dropbtn">
+					
 				</button>
 				
-				<h4>
 					<div id="dropdown" class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="#alignment">Alignment</a>
+						<a href="#typography">Typography</a>
+						<a href="#leads">Leads</a>
+						<a href="#media">Media</a>
+						<a href="#compontents">Compontents</a>
+						
 					</div>
-				</h4>
 			</div>
 		</div>
 
@@ -94,6 +101,7 @@
 	</article>
 
 	<article>
+				<a name="alignment"></a>
 
 		<hr>
 		<h1>Alignment</h1>
@@ -104,13 +112,13 @@
 
 		<p>There are nine layout classes to get started with and the css is found in <code>alignment.css</code>. </p>
 
-		<h3>Inline</h3>
-		<p>Inline is the main column on the screen and where this text is now. It takes up 60% of the screen, with a 20% margin on either side. To go wider use the <code>wide</code> or <code>full</code> classes. You can also divide the inline column up internally with <code>aside</code>.</p>
+		<h3>Article</h3>
+		<p>article is the main column on the screen and where this text is now. It takes up 60% of the screen, with a 20% margin on either side. To go wider use the <code>wide</code> or <code>full</code> classes. You can also divide the article column up internally with <code>aside</code>.</p>
 
 		
 
 		<h3>Asides</h3>
-		<p>There are three type of asides, two that go inside the inline column and one that does not. For each type, there are two sepearte classes for right and left. The two inline are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. The <code>aside class="left"</code> placed outside of the inline column will float to the edge of the screen.</p>
+		<p>There are three type of asides, two that go inside the article column and one that does not. For each type, there are two sepearte classes for right and left. The two article are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. The <code>aside class="left"</code> placed outside of the article column will float to the edge of the screen.</p>
 		<aside class="right">
 			<h2>Aside class right</h2>
 		</aside>
@@ -134,11 +142,11 @@
 	</article>
 
 	<aside class="left">
-		<h2>Aside class left, outside of the inline div</h2>
+		<h2>Aside class left, outside of the article div</h2>
 	</aside>
 
 	<aside class="right">
-		<h2>Aside class right, outside of the inline div</h2>
+		<h2>Aside class right, outside of the article div</h2>
 	</aside>
 
 	<article>
@@ -183,7 +191,7 @@
 	
 	<article>
 
-		<figcaption>Align accomapnying text underneath in an inline column</figcaption>
+		<figcaption>Align accomapnying text underneath in an article column</figcaption>
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit</em>.</p>
 
 		<h3>Make your own</h3>
@@ -207,8 +215,11 @@
 	
 	<article>
 
+	<a name="typography"></a>
 	<hr>
+
 		<h1>Typography</h1>
+		<br>
 		<p><span class="dropcap">T</span>his is a dropcap and the rest is a paragraph. <b>This is bold,</b> and <em>italic.</em> <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. </em></p>
 		<h1>h1 for headlines</h1>
 		<h2>h2 for summary deck </h2>
@@ -222,6 +233,7 @@
 
 
 	<article>
+	<a name="leads"></a>
 	<hr>
 		<h1>Leads</h1>
 		<p>There are three types of leads, <code>lead-text</code>, <code>lead-img</code> and one made using <a href="http://ai2html.org/">ai2html</a>. All styles are in the <code>media.css</code>. Since these usually go at the top of a page view the standalone html examples to see how they look normally.</p>		
@@ -251,12 +263,13 @@
 		<h6 class="date">Published Today</h6>
 	</figure>
 
-	
+	<a name="media"></a>
 	<article><hr></article>
 
 	
 
 	<article>
+
 		<h1>Media </h1>
 		<br>
 		<p>Images and videos are first placed in a <code>figure</code> to scale, and then this figure can be aligned where ever you like.</p>
@@ -291,12 +304,14 @@
 		<img src="img/test.jpg" alt="">
 		<article>
 			<figcaption>
-				Full image and caption inline with article
+				Full image and caption article with article
 			</figcaption>	
 		</article>
 	</figure>
 
 	<article>
+		<a name="compontents"></a>
+		<hr>
 		<h1>Compontents</h1>
 		
 		<h3>Pulled quotes</h3>

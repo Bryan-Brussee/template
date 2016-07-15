@@ -1,3 +1,5 @@
+@import 'breakpoints.scss';
+
 nav{
 	position: fixed;
 	top: 0;
@@ -40,7 +42,7 @@ nav{
 	}
 
 	.title h4{
-		margin-right: 50px;
+		margin-right: 5%;
 	}
 
 
@@ -68,6 +70,10 @@ nav{
 		margin-left: 20px;
 		margin-top: 12%;
 		margin-bottom: 7%;
+	}
+
+	.xs-menu{
+		display: none;
 	}
 
 
@@ -101,7 +107,9 @@ nav{
 	  opacity: 0;
 	}
 	.dropbtn{
-		 border-top: 10px solid transparent;
+		border-top: 10px solid transparent;
+		background: transparent;
+
 
 	}
 
@@ -110,6 +118,7 @@ nav{
 progress {
   /* Positioning */
   position: fixed;
+  z-index: -1;
   left: 0;
   top: 35px;
 
@@ -146,6 +155,22 @@ progress::-moz-progress-bar {
   opacity: .6;
 }
 
+@media (max-width: $xs-max) {
+	nav{
+		li.social{
+			display: none;
+		}
+		li.xs-menu{
+			display: inline;
+			position: relative;
+			float: right;
+			right: 15;
+		}
+	}
+
+
+
+}
 
 
 
