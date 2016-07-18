@@ -8,6 +8,7 @@ $md-max: ($lg-min - 1);
 
 
 
+
 html{
 	height: 100%
 }
@@ -66,51 +67,23 @@ article{
 
 .right-wide{
 	float: right;
-	width: 40%;
-	margin-right: -15%;
+	width: 55%;
+	margin-right: -25%;
 	margin-left: 1.5em;
 }
 
 .left-wide{
 	float: left;
-	width: 40%;
-	margin-left: -15%;
+	width: 55%;
+	margin-left: -25%;
 	margin-right: 1.5em;
 	text-align: right;
 }
 
-table {
-        border-collapse: collapse;
-        padding: 0;
-        margin: 0 0 11px 0;
-        width: 100%;
-    }
-
-table th {
-    text-align: left;
-    border-bottom: 2px solid #eee;
-    vertical-align: bottom;
-    padding: 1em 10px 10px 10px;
-    text-align: right;
-}
-
-table td {
-    border-bottom: 1px solid #eee;
-    vertical-align: top;
-    padding: 10px;
-    text-align: right;
-}
-
-table th:nth-child(1),
-table td:nth-child(1) {
-    text-align: left;
-    padding-left: 0;
-    font-weight: bold;
-}
 
 .wide{
 	width: 75%;
-	margin-left: 15%;
+	margin-left: 12.5%;
 	margin-bottom: 0%;
 }
 
@@ -128,6 +101,10 @@ table td:nth-child(1) {
 	width: 100%;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
+	figcaption{
+		width: 50%;
+		float: left;
+	}
 }
 .grid2{
 	margin: 0em;
@@ -136,6 +113,17 @@ table td:nth-child(1) {
 	margin-left: 0%;
 	margin-right: 5%;
 	float: left;
+
+}
+.grid3{
+	margin: 0em;
+	padding: 0em;
+	display: inline;
+	width: 30%;
+	margin-left: 0%;
+	margin-right: 3.3%;	
+	float: left;
+	margin-bottom: 1em;
 }
 
 hr{
@@ -148,54 +136,17 @@ hr{
 	margin-bottom: 2em;
 }
 
-@media screen and (max-width: 480px){
-	table,
-	tbody {
-	    display: block;
-	    width: 100%;
-	}
 
-	thead { display: none; }
-
-	table tr,
-	table th,
-	table td {
-	    display: block;
-	    padding: 0;
-	    text-align: left;
-	    white-space: normal;
-	}
-
-	table tr {
-	    border-bottom: 1px solid #eee;
-	    padding-bottom: 11px;
-	    margin-bottom: 11px;
-	}
-
-	table th[data-title]:before,
-	table td[data-title]:before {
-	    content: attr(data-title) ":\00A0";
-	    font-weight: bold;
-	}
-
-	table td {
-	    border: none;
-	    margin-bottom: 6px;
-	    color: #444;
-	}
-
-	table td:empty { display: none; }
-	table td:first-child {
-	    font-size: 14px;
-	    font-weight: bold;
-	    margin-bottom: 6px;
-	    color: #333;
-	}
-	table td:first-child:before { content: ''; }
-
-}
 // Usage
 @media (max-width: $xs-max) {
+	.xs-hidden{
+		
+		display: none;
+	}
+	.xs-visible{
+		display: inline;
+	}
+
 	article{
 		min-width: 85%;
 		margin-left: 7.5%;
@@ -252,9 +203,69 @@ hr{
 }
 
 
-// @media (min-width: $sm-min) { ... }
+@media (min-width: $sm-min) {
+	.xs-hidden{
+		display: none;
+	}
+	.xs-visible{
+		display: inline;
+	}
+	.sm-hidden{
+		display: none;
+	}
+	.sm-visible{
+		display: inline;
+	}
+}
 // @media (max-width: $sm-max) { ... }
-// @media (min-width: $md-min) { ... }
+@media (min-width: $md-min) { 
+	.xs-hidden{
+		display: none;
+	}
+	.xs-visible{
+		display: inline;
+	}
+	.sm-hidden{
+		display: none;
+	}
+	.sm-visible{
+		display: inline;
+	}
+	.md-hidden{
+		display: none;
+	}
+	.md-visible{
+		display: inline;
+	}
+ }
 // @media (max-width: $md-max) { ... }
-// @media (min-width: $lg-min) { ... }
+@media (min-width: $lg-min) { 
+	.xs-hidden{
+		display: none;
+		display: none;
+	}
+	.xs-visible{
+		display: inline;
+	}
+
+	.sm-hidden{
+		display: none;
+	}
+	.sm-visible{
+		display: inline;
+	}
+	.md-hidden{
+		display: none;
+	}
+	.md-visible{
+		display: inline;
+	}
+	.lg-hidden{
+		display: none;
+	}
+	.lg-visible{
+		display: inline;
+		display: inline;
+	}
+}
 

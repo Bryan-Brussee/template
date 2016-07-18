@@ -6,13 +6,20 @@
 
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/zoom.css">
 	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+
 
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/alignment.css">
 	<link rel="stylesheet" href="css/type.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/ads.css">
+	<link rel="stylesheet" href="css/style.css">
+
 
 	<!--endbuild-->
 
@@ -25,61 +32,50 @@
 	<div id="nav_invisible"></div>
 
 	<nav class="invisible">
-		<ul>
-			<a href="http://jamesbenedict.github.io">
-				<li id="logo">
-					<img src="img/w.logo.svg" alt="">
-				</li>
-			</a>
 
-			<a href="http://www.facebook.com" class="popup">
-				<li class="social fb-logo">
-					<img src="img/w.facebook.svg" alt="">
-				</li>
-			</a>
-	
-			<a href="http://www.twitter.com" class="popup">
-				<li class="social twitter-logo">
-					<img src="img/w.twitter.svg" alt="">
-				</li>
-			</a>
-
-			<a href=# class="popup">
-				<li class="social comments-logo">
-					<img src="img/w.comments.svg" alt="">
-				</li>
-			</a>
-		
-			<li class="xs-menu">
-				<p>ahs</p>
-				
-			</li>
-
-
-			
-		</ul>
-		
-		<div class="title">
-			<h4>Longform template</h4>
-
-			<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">
-					
-				</button>
-				
-					<div id="dropdown" class="dropdown-content">
-						<a href="#alignment">Alignment</a>
-						<a href="#typography">Typography</a>
-						<a href="#leads">Leads</a>
-						<a href="#media">Media</a>
-						<a href="#compontents">Compontents</a>
-						
-					</div>
-			</div>
+		<div class="logo">
+			<img src="img/w.logo.svg" alt="">
 		</div>
 
+		<div class="title">
+			<h4>Longform Template
 
-		
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn"></button>
+			
+				<div id="dropdown" class="dropdown-content">
+					<a href="#alignment">Alignment</a>
+					<a href="#typography">Typography</a>
+					<a href="#leads">Leads</a>
+					<a href="#media">Media</a>
+					<a href="#compontents">Compontents</a>	
+				</div>
+			</div>	
+			</h4>		
+		</div>
+
+		<div class="social">
+
+			<ul>
+				<a href="http://www.facebook.com" class="popup">
+					<li class="fb-logo">
+						<img src="img/w.facebook.svg" alt="">
+					</li>
+				</a>
+
+				<a href="http://www.twitter.com" class="popup">
+					<li class="twitter-logo">
+						<img src="img/w.twitter.svg" alt="">
+					</li>
+				</a>
+
+				<a href="#" class="popup">
+					<li class="comments-logo">
+						<img src="img/w.comments.svg" alt="">
+					</li>
+				</a>
+			</ul>
+		</div>
 		<progress value="0"></progress>
 	</nav>
 
@@ -97,7 +93,7 @@
 
 		<h6>By <a href="https://github.com/JamesBenedict">James Benedict</a> </h6>
 
-		<h5>This template is meant for people of all skill levels and aims to allow designers to spend more time designing and less time coding. Tweaks and changes are encouraged as it is only the boilerplate for you to build on. You can view some examples of stories developed with this version of the template here and older versions here.</h5>
+		<p><span class="dropcap">T</span>his template is meant for people of all skill levels and aims to allow designers to spend more time designing and less time coding. Tweaks and changes are encouraged as it is only the boilerplate for you to build on. You can view some examples of stories developed with this version of the template here and older versions here.</p>
 	</article>
 
 	<article>
@@ -113,12 +109,12 @@
 		<p>There are nine layout classes to get started with and the css is found in <code>alignment.css</code>. </p>
 
 		<h3>Article</h3>
-		<p>article is the main column on the screen and where this text is now. It takes up 60% of the screen, with a 20% margin on either side. To go wider use the <code>wide</code> or <code>full</code> classes. You can also divide the article column up internally with <code>aside</code>.</p>
+		<p>The <code>article</code> tag creates the main column on the screen and is where this text is now. It takes up 50% of the screen, with a 25% margin on either side. To go wider use the <code>wide</code> or <code>full</code> classes. You can also divide the article column up internally with <code>aside</code>.</p>
 
 		
 
 		<h3>Asides</h3>
-		<p>There are three type of asides, two that go inside the article column and one that does not. For each type, there are two sepearte classes for right and left. The two article are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. The <code>aside class="left"</code> placed outside of the article column will float to the edge of the screen.</p>
+		<p>There are three type of asides, two that go inside the  <code>article</code> and one that does not. For each type, there are two sepearte classes for right and left. The two article are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. The <code>aside class="left"</code> placed outside of the article column will float to the edge of the screen.</p>
 		<aside class="right">
 			<h2>Aside class right</h2>
 		</aside>
@@ -166,9 +162,7 @@
 	</div>
 	
 
-	<figure class="wide">
-			<img src="img/test.jpg" alt="">
-	</figure>
+	<img src="img/test.jpg" data-action="zoom" class="wide" alt="">
 	
 		<div id="nav_invisible1"></div>
 
@@ -180,9 +174,7 @@
 		
 	</div>
 
-		<figure class="full">
-			<img src="img/test.jpg" alt="">
-		</figure>
+		<img src="img/test.jpg" class="full" alt="">
 		<div id="nav_visible1"></div>
 
 	
@@ -195,21 +187,18 @@
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit</em>.</p>
 
 		<h3>Make your own</h3>
-		<p>We can also add classes to make our own grid. I like to stick to percentages for the width and have everything float left.</p>
+		<p>We can also add classes to make our own grid. I like to stick to percentages for the width and have everything float left. You can use <code>xs-hidden</code>, <code>xs-visible</code>, <code>sm-hidden</code>, <code>sm-visible</code>, <code>md-hidden</code>, <code>md-visible</code>, <code>lg-hidden</code> and <code>lg-visible</code> to hide/show an element at certain breakpoints. The </p>
 	</article>
 
 	
 	
 	<div class="grid-wrap">
-		<figure class="grid2">
-			<img src="img/test.jpg" alt="">
-			<figcaption>custom class</figcaption>
-		</figure>
+		<img src="img/test.jpg" data-action="zoom" class="grid2" alt="">
+		<figcaption class="xs-visible sm-hidden">custom class</figcaption>
 
-		<figure class="grid2">
-			<img src="img/test.jpg" alt="">
-			<figcaption>custom class</figcaption>
-		</figure>
+		<img src="img/test.jpg" data-action="zoom" class="grid2" alt="">
+		<figcaption class="xs-hidden sm-visible">custom class</figcaption>
+		<figcaption>custom class</figcaption>
 	</div>
 
 	
@@ -241,27 +230,23 @@
 	
 
 	<div class="lead-text">
-		
 			<h1>This is <code>lead-text</code> </h1>
 			<h2>With an optional subhead</h2>
 			<h6>By <a href="https://twitter.com/jamesgbenedict">James Benedict</a></h6>
 			<h6 class='date'>Published Today</h6>
 
-		<figure class="img-responsive center-block">
-			<img src="img/test.jpg"  alt="" data-lightbox="image-2" data-title="My caption">
-		</figure>
+			<img src="img/test.jpg" width="100%;">
 	</div> 
 
 	<article><hr></article>
 	
-
-	<figure class="lead-img">
-		<img src="img/test.jpg"  alt="" data-lightbox="image-1" data-title="My caption">
+	<div class="lead-img">
+		<img src="img/test.jpg">
 		<h1>This is the <code>lead-img</code></h1>
 		<h2>With an optional subhead</h2>
 		<h6>By <a href="https://twitter.com/jamesgbenedict">James Benedict</h6></a>
 		<h6 class="date">Published Today</h6>
-	</figure>
+	</div>
 
 	<a name="media"></a>
 	<article><hr></article>
@@ -269,45 +254,58 @@
 	
 
 	<article>
-
 		<h1>Media </h1>
 		<br>
-		<p>Images and videos are first placed in a <code>figure</code> to scale, and then this figure can be aligned where ever you like.</p>
+		<p>Styles are found in <code>media.css</code>.</p>
 
-		<figure>
-			<img src="img/test.jpg" alt="">
-			<figcaption>
-				Regular image
-			</figcaption>
-		</figure>
+		<h3>Images</h3>
+		<p>Supported photos are jpg, png, gif and svg. Include a <code>figcaption</code> underneath for a caption. To add image zooming, include the <code>zoom.js</code>, <code>zoom.css</code> in the file and <code>data-action="zoom"</code> to your image tag. </p>
+			<img src="img/test.jpg" data-action="zoom" alt="">
+			<figcaption>Caption</figcaption>
 
-		<aside class="right-wide">
-			<figure>
-				<img src="img/test.jpg" alt="">
-				<figcaption>
-					Aside image
-				</figcaption>
-			</figure>
+		<aside class="left-wide">
+			<img src="img/test.jpg" width="100%" data-action="zoom" alt="">
+			<figcaption>Caption</figcaption>
 		</aside>
-
-		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. </em></p>
 	</article>
 
-	<figure class="wide">
-		<img src="img/test.jpg" alt="">
-		<figcaption>
-			Wide image caption
-		</figcaption>
-	</figure>
+	<img src="img/test.jpg" class="wide" data-action="zoom" alt="">
+	<figcaption class="wide">Caption</figcaption>
 
-	<figure class="full">
-		<img src="img/test.jpg" alt="">
-		<article>
-			<figcaption>
-				Full image and caption article with article
-			</figcaption>	
-		</article>
-	</figure>
+	<article>
+
+		<h3>Video</h3>
+		<p>Save videos with a MP4 format and H.264 video codec.</p>
+		
+		<video width="100%" controls>
+			<source src="img/test.mp4" type="video/mp4">
+  			Your browser doesn't support HTML5 video tag.
+		</video>
+	
+
+		
+		<h3>Autoplay Video</h3>
+		<p>Include the <code>video.js</code> and then add an <code>autoplay</code> class to a video you want to start playing on scrollover.</p>
+		<figure> 
+			<video width="100%" controls class="autoplay" poster="img/test.jpg">
+				<source src="img/test.mp4" type="video/mp4">
+	  			Your browser doesn't support HTML5 video tag.
+			</video>
+		</figure>
+
+		<figure>
+			
+		</figure>
+		
+
+		
+		
+	</article>
+
+	
+
+	
 
 	<article>
 		<a name="compontents"></a>
@@ -330,6 +328,7 @@
 		<h3>Related content</h3>
 
 		<aside class="right related">
+			
 			<h5>Related content</h5>
 			<figure>
 				<img src="img/test.jpg" alt="">
@@ -339,6 +338,69 @@
 
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
 
+
+		
+		<button class="related-large">
+			<figure class="related-large">
+				<img src="img/test.jpg" alt="">	
+
+			</figure>
+			<h1>A story headline here</h1>
+			<h5>With more explaination here</h5>
+		</button>
+
+		<div class="related">
+			<h3>More on this subject</h3>
+			<div class="gridwrap">
+				<button class="grid3">
+					
+						<img src="img/test.jpg" alt="">
+						<h1>Story 1</h1>
+					
+				</button>
+
+				<button class="grid3">
+
+						<img src="img/test.jpg" alt="">
+						<h1>Story 2</h1>
+					
+				</button>
+
+				<button class="grid3">
+
+						<img src="img/test.jpg" alt="">
+						<h1>Story 3</h1>
+					
+				</button>
+
+			</div>
+		
+			<div class="gridwrap">
+				<button class="grid3">
+
+						<img src="img/test.jpg" alt="">
+						<h1>Story 4</h1>
+					
+				</button>
+
+				<button class="grid3">
+
+						<img src="img/test.jpg" alt="">
+						<h1>Story 5</h1>
+					
+				</button>
+
+				<button class="grid3">
+
+						<img src="img/test.jpg" alt="">
+						<h1>Story 6</h1>
+					
+				</button>
+
+			</div>
+				
+		</div>
+		<article><p style="visibility: hidden">a</p></article>
 
 		<h3>Static table</h3>
 			<table>
@@ -381,7 +443,231 @@
 				        <td data-title="Mar">3</td>
 				    </tr>
 				</table>
+
+	<h3>Live tables</h3>
+	<table id="live-table"></table>
+
+
+	    <script id="table-script" type="text/x-handlebars-template">
+			<tr>
+				<td class="date">{{date}}<td>
+				<td class="precipitation">{{snow}} inches</td>
+				<td class="description">
+					{{{depth}}}
+				</td>
+			</tr>
+	    </script>
+
+	<h3>Charts</h3>
+		<figure class="chart">
+		<h2>Headline</h2>
+		<h5>Further explaination</h5>
+			<div id="chart1" style="min-width: 300px; height:500px"></div>
+		<h6>Source: </h6>
+		</figure>
+
+	<h3>Maps</h3>
+	<figure>
+		<h2>Map Headline</h2>
+		<h5>More info</h5>
+		<div id="map"> </div>
+	</figure>
+	
+
+
+
+
+	</article>
+
+	<div class="wide">
+		<h3>Timeline</h3>
+		<div class="timeline-key">
+			<h5 class="timeline-1">Category 1</h5>
+			<h5 class="timeline-2">Category 2</h5>
+		</div>
+
+
+		<ul class="timeline">
+			<li>
+				<div class="timeline-badge">
+					<h5>#1</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 1</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li class="timeline-inverted">
+				<div class="timeline-badge second-subject">
+					<h5>#2</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 2</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - August 2016	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li>
+				<div class="timeline-badge second-subject">
+					<h5>#1</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 3</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li class="timeline-inverted">
+				<div class="timeline-badge ">
+					<h5>#2</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 4</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - August 2016	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+		</ul>
+	</div>
+	<article>
+	<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+	
+
+		<aside class="right-wide">
+			<div class="timeline-key">
+			<h5 class="timeline-1">Category 1</h5>
+			<h5 class="timeline-2">Category 2</h5>
+		</div>
+
+
+		<ul class="timeline sidebar">
+			<li>
+				<div class="timeline-badge">
+					<h5>#1</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 1</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li class="timeline-inverted">
+				<div class="timeline-badge second-subject">
+					<h5>#2</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 2</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - August 2016	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li>
+				<div class="timeline-badge second-subject">
+					<h5>#2</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 3</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+
+			<li class="timeline-inverted">
+				<div class="timeline-badge ">
+					<h5>#1</h5>
+				</div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						
+						<h2 class="timeline-title">Event 4</h2>
+						
+						<h6><i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - August 2016	</small></h6>
+				    </div>
+				    
+				    <div class="timeline-body">
+						<h5>Event info / media</h5>
+					</div>
+			</li>
+		</ul>
+	</div>
+		</aside>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
 		
+
+		
+		<h3>Mixit up</h3>
+
+		<h1>Ads</h1>
+		<p>There are three different types of ads, all require <code>ads.js</code>.</p>
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+		<div class="ad">
+			<p>a</p>
+		</div>
+	
+		<h1>Development</h1>
+		<h3>My Workflow</h3>
+		<h3>Depenencies</h3>
+
 	</article>
 
 
@@ -391,11 +677,26 @@
 
 
 <!--build:js js/main.min.js -->	
-<script src="js/jquery-2.1.4.min.js"></script>
 
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/tabletop.js"></script>
+<script src="js/handlebars.js"></script>
+
+
+<script src="js/tabletop-custom.js"></script>
+
+<script src="js/zoom.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/dropdown.js"></script>
 <script src=js/popup.js></script>
+<script src="js/highcharts.src.js"></script>
+<script src="js/leaflet-src.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/map.js"></script>
+<script src="js/video.js"></script>
+<script src="js/ads.js"></script>
 <!-- endbuild -->
 
 </body>

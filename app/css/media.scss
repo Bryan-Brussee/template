@@ -8,9 +8,13 @@ figure{
 }
 
 
-figure > img{
+img{
 	width: 100%;
 	margin-left: 0%
+}
+
+nav img{
+	width: auto;
 }
 
 .wide > figure{
@@ -22,25 +26,34 @@ figure > img{
 	margin-left: 0%;
 }
 
+.aside{
+	.left-wide, .right-wide, .left, .right{
+		img{
+			width: 100%;
+		}
+	}
+}
+.lead-text{
+	img{
+		width: 100%;
+	}	
+}
 .lead-img{
 	top: 0;
 	text-align: center;
+	img{
+		width: 100%;
+	}
 }
 
 .lead-text{
 	text-align: center;
 }
 
-figure.share >img {
-	margin-top: .5em;
-	max-width: 25px;
+video{
+	height: 100%;
 }
 
-.related{
-	border-top: .5px solid #eee;
-	border-bottom: .5px solid #eee;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
-}
+
 
 

@@ -19,7 +19,7 @@ $(document).on('ready', function() {
 $(document).on('ready', function() {
 	var winHeight = $(window).height(), 
      	docHeight = $(document).height(),
-     	max, position, startChange, endChange;
+     	position, startChange, endChange;
 
      	$(document).on('scroll', function (){ 
      		position = $(window).scrollTop(),
@@ -38,7 +38,7 @@ $(document).on('ready', function() {
 
      		} else if ((position > startChange.top && position < endChange.top)){
      			$('nav').addClass('invisible');
-                $("#logo").html("<img src='../img/w.logo.svg'>");
+                $(".logo").html("<img src='../img/w.logo.svg'>");
                 // $(".dropbtn").html("<img src=''>");
                 $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
                 $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
@@ -47,7 +47,7 @@ $(document).on('ready', function() {
      		// add a new else if for every change you want
      		} else if ((position > startChange1.top && position < endChange1.top)){
      			$('nav').addClass('invisible');
-                $("#logo").html("<img src='../img/w.logo.svg'>");
+                $(".logo").html("<img src='../img/w.logo.svg'>");
                 // $(".dropbtn").html("<img src=''>");
                 $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
                 $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
@@ -55,7 +55,7 @@ $(document).on('ready', function() {
      		// This is the only time you'll need to remove the invisible class
      		} else{
      			$('nav').removeClass('invisible');
-     			$("#logo").html("<img src='../img/b.logo.svg'>");
+     			$(".logo").html("<img src='../img/b.logo.svg'>");
                 // $(".dropbtn").html("<img src='../img/arrow_down.svg'>");
 
 

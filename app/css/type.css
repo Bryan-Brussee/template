@@ -49,7 +49,7 @@ h5, figcaption {
 
 h5 {
   font-weight: 400;
-  line-height: 1.5em; }
+  line-height: 1.25em; }
 
 h6 {
   color: #666666;
@@ -70,18 +70,6 @@ p {
   line-height: 1.5em;
   font-weight: 300;
   margin-bottom: 1em; }
-
-.related h1 {
-  font-size: 1.25em;
-  margin-top: .5em;
-  line-height: 1.2em; }
-
-.related h5 {
-  font-size: 14px;
-  margin-bottom: .5em; }
-
-.related a {
-  color: black; }
 
 a {
   color: #337ab7;
@@ -112,5 +100,68 @@ code {
   padding: 0; }
 
 figcaption {
-  margin-top: .75em;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  line-height: 1.25em; }
+
+.related h1 {
+  font-size: 1.5em;
+  margin-top: .5em;
+  line-height: 1.2em; }
+
+.related h5 {
+  font-size: 14px;
+  margin-bottom: .5em; }
+
+.related h3 {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: .25em; }
+
+.related a {
+  color: black; }
+
+aside.related h1 {
+  font-size: 1.25em; }
+
+.related-large h1 {
+  font-size: 1.75em;
+  margin-top: .5em;
+  margin-bottom: .25em;
+  line-height: 1.2em; }
+
+.related-large h5 {
+  font-size: 14px;
+  margin-bottom: .5em; }
+
+.related-large a {
+  color: black; }
+
+.timeline-key {
+  display: inline-block; }
+
+.timeline-1 {
+  color: #bd4147;
+  display: inline-block;
+  margin-right: 1em; }
+
+.timeline-2 {
+  color: #42708C;
+  display: inline-block; }
+
+.timeline h2 {
+  line-height: 1.25em; }
+
+.timeline .timeline-badge > h5 {
+  font-size: .75em;
+  font-weight: 500;
+  color: white;
+  padding-top: 0em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.timeline h6 {
+  font-size: .75em;
+  margin-bottom: 1em; }

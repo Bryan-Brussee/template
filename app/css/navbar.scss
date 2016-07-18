@@ -7,7 +7,7 @@ nav{
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
-	height: 35px;
+	height: 30px;
     width: 100%;
     background-color: #f8f9f9;
     border-bottom: 1px solid #ccc;
@@ -16,65 +16,132 @@ nav{
     box-shadow: 0px 5px 5px rgba(204,204,204, 0.4);
     display: inline-block;
     text-align: center;
-	ul{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-	li{
-		max-height: 25px;
-		display: inline-block;
-		float: left
-	}
+    z-index: 999 !important;
 
-	h4{
-		position: relative;
-		top: 8px;
-	}
+    .logo{
+    	margin: 0;
+    	padding: 0;
+    	width: 25%;
+    	padding-top: 5px;
+    	img{
+    		float: left;
+    		max-height: 20px;
+    	}
+    }
 
-	.title{
-		// display: inline-block;
-		position: absolute;
-		width: 100%;
-		text-align: center;
-		z-index: -1;
-	}
+    .title{
+    	margin: 0;
+    	padding: 0;
+    	width: 50%;
+    	text-align: center;
+    	position: relative;
+    	// display: inline-block;
+    	left: 25%;
+    	h4{
+    		width: 100%;
+    		margin-top: -5px;
+    	}
+    	.dropdown{
+    		display: inline-block;
+    		position: relative;
+			margin-left: .25em;
+			top: 2px;
+    	}
+    }
 
-	.title h4{
-		margin-right: 5%;
-	}
 
+    .social{
+    	position: relative;
+    	top: -25px;
+    	margin: 0;
+    	padding: 0;
+    	width: 25%;
+    	left: 75%;
+    	ul{
+    		list-style: none;
+    		width: 100%
+    	}
+    	li{
+    		display: inline-block;
+    		position: relative;
+    		left: 0;
+    		float: right;
 
+    		margin-left: 0em;
+		
+    	}
 
-	#logo img{
-		position: relative;
-		z-index: 1;
-		left: 5px;
-		max-width: 40px;
-		margin-top:12%;
-		margin-bottom: 7%;
-		margin-right: 1em;
-	}
-
-	.social{
-		position: relative;
-		z-index: 1;
-		right: 15px;
-		float: right;
-	}
-
-	.social img{
+    	.fb-logo{
+    		margin-right: 15px;
+    	}
+    	img{
 		z-index: 1;
 		max-width: 25px;
+		max-height: 20px;
 		margin-left: 20px;
-		margin-top: 12%;
+		margin-top: 20%;
 		margin-bottom: 7%;
-	}
+		}
 
-	.xs-menu{
-		display: none;
-	}
+		
+    }
+	// ul{
+	// 	list-style-type: none;
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	width: 100%;
+	// }
+	// li{
+	// 	max-height: 25px;
+	// 	display: inline-block;
+	// 	float: left
+	// }
+
+	// h4{
+	// 	position: relative;
+	// 	top: 8px;
+	// }
+
+	// .title{
+	// 	// display: inline-block;
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	text-align: center;
+	// 	z-index: -1;
+	// }
+
+	// .title h4{
+	// 	margin-right: 5%;
+	// }
+
+
+
+	// #logo img{
+	// 	position: relative;
+	// 	z-index: 1;
+	// 	left: 5px;
+	// 	max-width: 40px;
+	// 	margin-top:12%;
+	// 	margin-bottom: 7%;
+	// 	margin-right: 1em;
+	// }
+
+	// .social{
+	// 	position: relative;
+	// 	z-index: 1;
+	// 	right: 15px;
+	// 	float: right;
+	// }
+
+	// .social img{
+	// 	z-index: 1;
+	// 	max-width: 25px;
+	// 	margin-left: 20px;
+	// 	margin-top: 12%;
+	// 	margin-bottom: 7%;
+	// }
+
+	
 
 
 }
@@ -106,12 +173,7 @@ nav{
 	progress::-moz-progress-bar {
 	  opacity: 0;
 	}
-	.dropbtn{
-		border-top: 10px solid transparent;
-		background: transparent;
-
-
-	}
+	
 
 }
 
@@ -120,7 +182,7 @@ progress {
   position: fixed;
   z-index: -1;
   left: 0;
-  top: 35px;
+  top: 30px;
 
   /* Dimensions */
   width: 100%;
@@ -157,19 +219,26 @@ progress::-moz-progress-bar {
 
 @media (max-width: $xs-max) {
 	nav{
-		li.social{
+		li.fb-logo{
+			// display: none;
+		}
+		li.twitter-logo{
+			// display: none;
+		}
+		li.comments-logo{
 			display: none;
 		}
-		li.xs-menu{
-			display: inline;
-			position: relative;
-			float: right;
-			right: 15;
+		
+
+	}
+}
+
+@media (min-width: $xs-max+1){
+	nav{
+		li.share{
+			display: none;
 		}
 	}
-
-
-
 }
 
 

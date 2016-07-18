@@ -6,9 +6,12 @@ figure {
   font: inherit;
   vertical-align: baseline; }
 
-figure > img {
+img {
   width: 100%;
   margin-left: 0%; }
+
+nav img {
+  width: auto; }
 
 .wide > figure {
   width: 100%;
@@ -17,19 +20,20 @@ figure > img {
 .full > figure {
   margin-left: 0%; }
 
+.aside .left-wide img, .aside .right-wide img, .aside .left img, .aside .right img {
+  width: 100%; }
+
+.lead-text img {
+  width: 100%; }
+
 .lead-img {
   top: 0;
   text-align: center; }
+  .lead-img img {
+    width: 100%; }
 
 .lead-text {
   text-align: center; }
 
-figure.share > img {
-  margin-top: .5em;
-  max-width: 25px; }
-
-.related {
-  border-top: .5px solid #eee;
-  border-bottom: .5px solid #eee;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%; }
+video {
+  height: 100%; }
