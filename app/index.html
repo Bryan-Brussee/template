@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="css/type.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/components.css">
-	<link rel="stylesheet" href="css/ads.css">
+	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -86,8 +86,9 @@
 
 
 	</div>
-
-	<article>
+	
+	<div id="nav_visisble"></div>
+	<!-- <article>
 	<br>	
 		<div id="nav_visible"></div>
 
@@ -184,7 +185,7 @@
 	<article>
 
 		<figcaption>Align accomapnying text underneath in an article column</figcaption>
-		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit</em>.</p>
+		
 
 		<h3>Make your own</h3>
 		<p>We can also add classes to make our own grid. I like to stick to percentages for the width and have everything float left. You can use <code>xs-hidden</code>, <code>xs-visible</code>, <code>sm-hidden</code>, <code>sm-visible</code>, <code>md-hidden</code>, <code>md-visible</code>, <code>lg-hidden</code> and <code>lg-visible</code> to hide/show an element at certain breakpoints. The </p>
@@ -201,31 +202,9 @@
 		<figcaption>custom class</figcaption>
 	</div>
 
-	
 	<article>
-
-	<a name="typography"></a>
-	<hr>
-
-		<h1>Typography</h1>
-		<br>
-		<p><span class="dropcap">T</span>his is a dropcap and the rest is a paragraph. <b>This is bold,</b> and <em>italic.</em> <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. </em></p>
-		<h1>h1 for headlines</h1>
-		<h2>h2 for summary deck </h2>
-		<h3>h3 for sectionhead</h3>
-		<h4>h4 is up for grabs</h4>
-		<h5>h5 for graphics' and asides' copy</h5>
-		<h6>h6 for bylines</h6>
-		<h6 class="date">h6 for dates</h6>
-		<figcaption>figcaption for captions</figcaption>
-	</article>
-
-
-	<article>
-	<a name="leads"></a>
-	<hr>
-		<h1>Leads</h1>
-		<p>There are three types of leads, <code>lead-text</code>, <code>lead-img</code> and one made using <a href="http://ai2html.org/">ai2html</a>. All styles are in the <code>media.css</code>. Since these usually go at the top of a page view the standalone html examples to see how they look normally.</p>		
+		<h3>Leads</h3>
+		<p>There are three types of leads, <code>lead-text</code>, <code>lead-img</code> and one made using <a href="http://ai2html.org/">ai2html</a>. All styles are in the <code>alignment.css</code>. Since these usually go at the top of a page view the standalone html examples to see how they look normally.</p>		
 	</article>
 	
 
@@ -252,8 +231,30 @@
 	<article><hr></article>
 
 	
+	<article>
+
+	<a name="typography"></a>
+
+		<h1>Typography</h1>
+		<br>
+		<p><span class="dropcap">T</span>his is a dropcap and the rest is a paragraph. <b>This is bold,</b> and <em>italic.</em> <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. </em></p>
+		<h1>h1 for headlines</h1>
+		<h2>h2 for summary deck </h2>
+		<h3>h3 for sectionhead</h3>
+		<h4>h4 is up for grabs</h4>
+		<h5>h5 for graphics' and asides' copy</h5>
+		<h6>h6 for bylines</h6>
+		<h6 class="date">h6 for dates</h6>
+		<figcaption>figcaption for captions</figcaption>
+	</article>
+
+
+	
+
+	
 
 	<article>
+	<hr>
 		<h1>Media </h1>
 		<br>
 		<p>Styles are found in <code>media.css</code>.</p>
@@ -352,111 +353,107 @@
 		<div class="related">
 			<h3>More on this subject</h3>
 			<div class="gridwrap">
-				<button class="grid3">
-					
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
 						<h1>Story 1</h1>
-					
-				</button>
+					</button>
+				</a>
 
-				<button class="grid3">
-
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
-						<h1>Story 2</h1>
-					
-				</button>
+						<h1>Story 2</h1>	
+					</button>
+				</a>
 
-				<button class="grid3">
-
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
 						<h1>Story 3</h1>
-					
-				</button>
+					</button>
+				<a href="" class="grid3">
 
 			</div>
 		
 			<div class="gridwrap">
-				<button class="grid3">
-
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
 						<h1>Story 4</h1>
-					
-				</button>
+					</button>
+				</a>
 
-				<button class="grid3">
-
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
-						<h1>Story 5</h1>
-					
-				</button>
+						<h1>Story 5</h1>	
+					</button>
+				</a>
 
-				<button class="grid3">
-
+				<a href="" class="grid3">
+					<button>
 						<img src="img/test.jpg" alt="">
 						<h1>Story 6</h1>
-					
-				</button>
-
+					</button>
+				</a>
 			</div>
 				
 		</div>
 		<article><p style="visibility: hidden">a</p></article>
 
+ 	
 		<h3>Static table</h3>
 			<table>
-				    <thead>
-				        <tr>
-				            <th>Category</th>
-				            <th>January</th>
-				            <th>February</th>
-				            <th>March</th>
-				        </tr>
-				    </thead>
-				    <tr>
-				        <td data-title="Category">Total</td>
-				        <td data-title="Jan">1</td>
-				        <td data-title="Feb">2</td>
-				        <td data-title="Mar">3</td>
-				    </tr>
-				    <tr>
-				        <td data-title="Category">Less than a high school diploma</td>
-				        <td data-title="Jan">1</td>
-				        <td data-title="Feb">2</td>
-				        <td data-title="Mar">3</td>
-				    </tr>
-				    <tr>
-				        <td data-title="Category">High school graduates, no college</td>
-				        <td data-title="Jan">1</td>
-				        <td data-title="Feb">2</td>
-				        <td data-title="Mar">3</td>
-				    </tr>
-				    <tr>
-				        <td data-title="Category">Some college or associate degree</td>
-				        <td data-title="Jan">1</td>
-				        <td data-title="Feb">2</td>
-				        <td data-title="Mar">3</td>
-				    </tr>
-				    <tr>
-				        <td data-title="Category">Bachelor&rsquo;s degree and higher</td>
-				        <td data-title="Jan">1</td>
-				        <td data-title="Feb">2</td>
-				        <td data-title="Mar">3</td>
-				    </tr>
-				</table>
+			    <thead>
+			        <tr>
+			            <th>Month</th>
+			            <th>Weather</th>
+			            <th>Average</th>
+			            <th>Sunlight</th>
+			        </tr>
+			    </thead>
+			    <tr>
+			        <td data-title="Category" class="xs-head">January</td>
+			        <td data-title="Weather">1</td>
+			        <td data-title="Average">2</td>
+			        <td data-title="Sunlight">3</td>
+			    </tr>
+			    <tr>
+			        <td data-title="Category" class="xs-head">February</td>
+			        <td data-title="Weather">1</td>
+			        <td data-title="Average">2</td>
+			        <td data-title="Sunlight">3</td>
+			    </tr>
+			    <tr>
+			        <td data-title="Category" class="xs-head">March</td>
+			        <td data-title="Weather">1</td>
+			        <td data-title="Average">2</td>
+			        <td data-title="Sunlight">3</td>
+			    </tr>
+			    
+			</table>
 
-	<h3>Live tables</h3>
-	<table id="live-table"></table>
+		<h3>Live tables</h3>
+		<p>These tables display data from a google spreadsheet. This uses the <a href="tabletop.jshttps://github.com/jsoma/tabletop">tabletop.js</a> plugin and requires <code>tabletop.js</code> and <code>tabletop-custom.js</code>. All styles are found in components.css. </p>
+		
+		<p>You can feed it into lines of text like these.</p>
+		<p id="simple-table"></p>
 
+		<p>Or a full table like this.</p>
+		<table id="live-table"></table>
 
-	    <script id="table-script" type="text/x-handlebars-template">
-			<tr>
-				<td class="date">{{date}}<td>
-				<td class="precipitation">{{snow}} inches</td>
-				<td class="description">
-					{{{depth}}}
-				</td>
-			</tr>
-	    </script>
+		
+		
+	    <script id="table-template" type="text/x-handlebars-template">
+				
+				<tr>
+					<td data-title="Category">{{Name}}</td>
+					<td data-title="Weather">{{{Weather}}}</td>
+					<td data-title="Average">{{Average}} degrees</td>
+					<td data-title="Sunlight">{{{Sunlight}}} hours</td>
+				</tr>
+		    </script>
 
 	<h3>Charts</h3>
 		<figure class="chart">
@@ -559,8 +556,8 @@
 						<h5>Event info / media</h5>
 					</div>
 			</li>
-		</ul>
-	</div>
+		</ul> -->
+	<!-- </div>
 	<article>
 	<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
 	
@@ -654,19 +651,65 @@
 
 		
 		<h3>Mixit up</h3>
+		<p>Mixitup is a jQuery plugin that allows easier object sorting. Css is in <code>components.css</code></p>
+
+		<div id="mixitup">
+		    
+		    <button class="filter" data-filter="all">Show All</button>
+		    <button class="filter" data-filter=".category-1">Category 1</button>
+			<button class="filter" data-filter=".category-2">Category 2</button>
+			<button class="filter" data-filter=".category-3">Category 2</button>
+
+			<button class="sort" data-sort="my-order:asc">Ascending Order</button>
+			<button class="sort" data-sort="my-order:desc">Descending Order</button>
+
+			<br>
+
+			<div class="mix category-1" data-my-order="1"> <h5>Item 1</h5> </div>
+		    <div class="mix category-2" data-my-order="2"> <h5>Item 2</h5> </div>
+		    <div class="mix category-3" data-my-order="3"> <h5>Item 3</h5> </div>
+		    <div class="mix category-1" data-my-order="4"> <h5>Item 4</h5> </div>
+		    <div class="mix category-2" data-my-order="5"> <h5>Item 5</h5> </div>
+		    <div class="mix category-3" data-my-order="6"> <h5>Item 6</h5> </div>
+
+		</div>
+
+	</article> -->
+
+	<article>
 
 		<h1>Ads</h1>
-		<p>There are three different types of ads, all require <code>ads.js</code>.</p>
+		<p>There are three different types of ads, all require <code>content.js</code> and content.css. Ads are called content because calling them ads makes it too easy for adblock.</p>
 
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
 
-		<div class="ad">
-			<p>a</p>
+		
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+		
+		<p>There are three different types of ads, all require <code>content.js</code> and content.css. Ads are called content because calling them ads makes it too easy for adblock.</p>
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+		
+
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+
+
+		<div id="ad" class="ad-passive">
+
+			<div id="btnClose">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</div>
+
 		</div>
-	
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+	<!-- 
 		<h1>Development</h1>
 		<h3>My Workflow</h3>
-		<h3>Depenencies</h3>
+		<h3>Depenencies</h3> -->
 
 	</article>
 
@@ -688,6 +731,8 @@
 
 <script src="js/zoom.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
+<script src="js/mixitup-script.js"></script>
+
 <script src="js/navbar.js"></script>
 <script src="js/dropdown.js"></script>
 <script src=js/popup.js></script>
@@ -696,7 +741,7 @@
 <script src="js/chart.js"></script>
 <script src="js/map.js"></script>
 <script src="js/video.js"></script>
-<script src="js/ads.js"></script>
+<script src="js/content.js"></script>
 <!-- endbuild -->
 
 </body>

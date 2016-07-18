@@ -1,0 +1,47 @@
+#ad{
+	width: 60%;
+	margin-left: 15%;
+	min-width: 200px;
+	height: 60px;
+	position: relative;
+	
+
+	p{
+		color: blue;
+	}
+	#btnClose{
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+
+	#btnClose:hover{
+		background-color: blue;
+	}
+}
+
+.ad-active{
+	width: 60%;
+	margin-left: 15%;
+	min-width: 200px;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	background-color: red;
+}
+
+.ad-passive{
+	visibility: invisible;
+	width: 60%;
+	margin-left: 15%;
+	min-width: 200px;
+	height: 60px;
+	position: static;
+	background-color: purple;
+
+}
+
+.xxx{
+	width: 2%;
+}
+

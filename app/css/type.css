@@ -20,6 +20,7 @@ h1 {
   font-weight: 900;
   margin-bottom: .1em;
   margin-top: .5em;
+  color: #333;
   /*font-weight: 100*/ }
 
 h2, h3, h4, h5, h6, figcaption, td, tr, th {
@@ -103,6 +104,9 @@ figcaption {
   margin-bottom: 1.5em;
   line-height: 1.25em; }
 
+.related a {
+  color: green; }
+
 .related h1 {
   font-size: 1.5em;
   margin-top: .5em;
@@ -117,9 +121,6 @@ figcaption {
   font-size: 1.5em;
   margin-bottom: .25em; }
 
-.related a {
-  color: black; }
-
 aside.related h1 {
   font-size: 1.25em; }
 
@@ -132,9 +133,6 @@ aside.related h1 {
 .related-large h5 {
   font-size: 14px;
   margin-bottom: .5em; }
-
-.related-large a {
-  color: black; }
 
 .timeline-key {
   display: inline-block; }

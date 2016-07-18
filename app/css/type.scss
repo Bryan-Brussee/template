@@ -26,6 +26,7 @@ h1{
 	font-weight: 900;
 	margin-bottom: .1em;
 	margin-top: .5em;
+	color: #333;
 	/*font-weight: 100*/
 }
 
@@ -134,6 +135,9 @@ figcaption{
 
 
 .related{
+	a{
+		color: green;
+	}
 	h1{
 		font-size: 1.5em;
 		margin-top: .5em;
@@ -148,9 +152,7 @@ figcaption{
 		font-size: 1.5em;
 		margin-bottom: .25em;
 	}
-	a{
-		color: black;
-	}
+	
 }
 
 aside.related{
@@ -171,9 +173,6 @@ aside.related{
 		margin-bottom: .5em;
 	}
 	
-	a{
-		color: black;
-	}
 }
 
 
@@ -214,4 +213,3 @@ aside.related{
 	}
 
 }
-
