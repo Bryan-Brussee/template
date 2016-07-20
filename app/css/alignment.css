@@ -13,6 +13,8 @@ article {
   margin-top: 1em; }
   article aside {
     width: 25%; }
+  article aside.ad {
+    width: 40%; }
 
 aside {
   width: 10%;
@@ -21,6 +23,9 @@ aside {
   padding: 0em; }
   aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, aside p, aside figcaption {
     margin-top: 0em; }
+
+aside.ad {
+  width: 20%; }
 
 .right {
   float: right;

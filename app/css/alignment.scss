@@ -28,6 +28,9 @@ article{
 	aside{
 		width: 25%;
 	}
+	aside.ad{
+		width: 40%;
+	}
 
 }
 
@@ -40,6 +43,11 @@ aside{
 	h1,h2,h3,h4,h5,h6,p,figcaption{
 		margin-top: 0em;
 	}
+	
+}
+
+aside.ad{
+	width: 20%;
 }
 
 .right{
