@@ -7,8 +7,6 @@ $lg-min: 1200px;
 $md-max: ($lg-min - 1);
 
 
-
-
 html{
 	height: 100%
 }
@@ -109,6 +107,7 @@ article{
 	width: 100%;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
+	height: 100%;
 	figcaption{
 		width: 50%;
 		float: left;
@@ -121,7 +120,15 @@ article{
 	margin-left: 0%;
 	margin-right: 5%;
 	float: left;
+	height: 100%;
 
+}
+
+.grid-wrap:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 .grid3{
 	margin: 0em;
@@ -134,21 +141,13 @@ article{
 	margin-bottom: 1em;
 }
 
-.lead-text{
-	img{
-		width: 100%;
-	}	
-}
-.lead-img{
+
+.lead{
 	top: 0;
 	text-align: center;
 	img{
 		width: 100%;
 	}
-}
-
-.lead-text{
-	text-align: center;
 }
 
 hr{

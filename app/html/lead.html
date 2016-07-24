@@ -26,26 +26,26 @@
 </head>
 <body>
 
-		<!-- <h3>Leads</h3>
-		<p>There are two types of leads, <code>lead</code> and one made using <a href="http://ai2html.org/">ai2html</a>. You can either place the text above or below the image.</p> -->		
-<div class="lead">
-			<img src="../img/test.jpg">
-
-			<h1>This is a <code>lead</code> </h1>
-			<h2>With a subhead</h2>
-			<h5>By <a href="https://twitter.com/jamesgbenedict">James Benedict</a></h5>
-			<h6>July 23, 2016</h6>
-	</div> 
 <article>
-
 <h1>Alignment</h1>
+		<h2><a href="html/alignment.html">Example on standalone page</a></h2>
 
 		<p>There are nine layout classes to start designing with. The css is found in <code>alignment.css </code>.</p>
 
 		<h3>Article</h3>
 		<p>The <code>article</code> tag creates the main column on the screen and is where this text is now. It takes up 50% of the screen, with a 25% margin on either side.</p>
 		
+<pre>
+&lt;body&gt;
+&#9;&lt;article&gt;
+&#9; &#9;...your content here...
+&#9;&lt;/article&gt;
+&lt;/body&gt;
+</pre>
+	
+		
 		<h3>Asides</h3>
+
 
 		<p>There are three type of asides, two that go inside the <code>article</code> tag and one that does not. For each type, there are two sepearte classes for right and left. The two tags that go inside <code>article</code> are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. If the <code>aside class="left"</code> is placed outside of the article, it will float to the edge of the screen.</p>
 
@@ -58,6 +58,15 @@
 		</aside>
 
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</em></p>
+<pre>
+&lt;article&gt;
+	&lt;aside class="left"&gt; ... &lt;/aside&gt;
+
+	&lt;aside class="right"&gt; ... &lt;/aside&gt;
+
+	&lt;p&gt; ... &lt;/p&gt;	
+&lt;/article&gt;
+</pre>
 		
 		<aside class="right-wide">
 			<h2>Aside class right-wide</h2>
@@ -71,6 +80,15 @@
 
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit</em>.</p>
 
+<pre>
+&lt;article&gt;
+	&lt;aside class="left-wide"&gt; ... &lt;/aside&gt;
+
+	&lt;aside class="right-wide"&gt; ... &lt;/aside&gt;
+
+	&lt;p&gt; ... &lt;/p&gt;	
+&lt;/article&gt;
+</pre>
 	</article>
 
 	<aside class="left">
@@ -84,7 +102,19 @@
 	<article>
 		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit</em>.</p>
 
+<pre>
+&lt;article&gt;
+	...content above aside...
+&lt;/article&gt;
 
+	&lt;aside class="left"&gt; ... &lt;/aside&gt;
+
+	&lt;aside class="right"&gt; ... &lt;/aside&gt;
+
+&lt;article&gt;
+	...content inline with aside...
+&lt;/article&gt;
+</pre>
 	</article>
 
 	<div class="wide">
@@ -95,7 +125,20 @@
 	<img src="../img/test.jpg" data-action="zoom" class="wide" alt="">
 
 <article>
+<pre>
+&lt;article&gt; ... &lt;/article&gt;
 
+&lt;div class="wide"&gt;
+	...wide text here...
+	...other wide elements...
+&lt;/div&gt;
+
+&lt;img src="../img/test.jpg" class="wide"&gt;
+	...wide image here...
+&lt;/div&gt;
+
+&lt;article&gt; ... &lt;/article&gt;
+</pre>
 </article>
 	
 	<div id="nav_invisible1"></div>
@@ -113,6 +156,17 @@
 	<article>
 
 		<figcaption>Align accompanying text underneath in an article column</figcaption>
+<pre>
+&lt;article&gt; ... &lt;/article&gt;
+
+	&lt;div id="nav-invisible"&gt;
+
+	&lt;img src="../img/test.jpg" class="full"&gt;
+
+	&lt;div id="nav-visible"&gt;
+
+&lt;article&gt; ... &lt;/article&gt;
+</pre>
 
 		<h3>Make your own</h3>
 		<p>We can also add classes to make our own grid. I like to stick to percentages for the width and have everything float left. You can use <code>xs-hidden</code>, <code>xs-visible</code>, <code>sm-hidden</code>, <code>sm-visible</code>, <code>md-hidden</code>, <code>md-visible</code>, <code>lg-hidden</code> and <code>lg-visible</code> to hide/show an element at certain breakpoints. The tags work for all breakpoints larger than itself - the<code>sm-hidden</code> will keep an element hidden at md and lg breakpoints but will not hide at xs breakpoints. The xs breakpoint is under 768px, sm breakpoints are between 768px-991px, md breakpoints are between 992px-1199px and lg breakpoint is 1200px.</p>
@@ -127,13 +181,76 @@
 		<figcaption>custom class</figcaption>
 	</div>
 
+<article>
+<pre>
+&lt;article&gt; ... &lt;/article&gt;
+	&lt;div class="grid-wrap&gt;
+		&lt;img src="../img/test.jpg" class="grid2"&gt;
+		&lt;figcaption class="xs-visible sm-hidden"&gt; First image's xs caption &lt;figcaption&gt;
 
+		&lt;img src="../img/test.jpg" class="grid2"&gt;
+		&lt;figcaption class="xs-hidden sm-visible"&gt; First image's other caption &lt;figcaption&gt;
+		&lt;figcaption&gt; Second image's caption &lt;figcaption&gt;
+
+	&lt;/div&gt;
+&lt;article&gt; ... &lt;/article&gt;	
+</pre>
+</article>
+
+	<article>
+		<h3>Leads</h3>
+		<p>There are two types of leads, <code>lead</code> and one made using <a href="http://ai2html.org/">ai2html</a>. You can either place the text above or below the image.</p>		
+	</article>
 	
 
-	
+	<div class="lead">
+			<img src="../img/test.jpg">
+
+			<h1>This is a <code>lead</code> </h1>
+			<h2>With a subhead</h2>
+			<h5>By <a href="https://twitter.com/jamesgbenedict">James Benedict</a></h5>
+			<h6>Published Today</h6>
+	</div> 
+
+
+<article>
+<pre>
+&lt;article&gt; ... &lt;/article&gt;
+
+&lt;div class="lead"&gt;
+
+	&lt;img src="../img/test.jpg"&gt;
+
+	&lt;h1&gt; headline &lt;/h1&gt;
+	&lt;h2&gt; subhead &lt;/h2&gt;
+	&lt;h5&gt; name &lt;/h5&gt;
+	&lt;h6&gt; name &lt;/h6&gt;
+
+&lt;/div&gt;
+</pre>
+
+<hr>
+</article>
+
+
+
 
 <!--build:js js/main.min.js -->	
 <script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/tabletop.js"></script>
+<script src="../js/handlebars.js"></script>
+<script src="../js/tabletop-custom.js"></script>
+<script src="../js/zoom.js"></script>
+<script src="../js/jquery.mixitup.min.js"></script>
+<script src="../js/mixitup-script.js"></script>
+<script src="../js/navbar.js"></script>
+<script src=../js/popup.js></script>
+<script src="../js/highcharts.src.js"></script>
+<script src="../js/leaflet-src.js"></script>
+<script src="../js/chart.js"></script>
+<script src="../js/map.js"></script>
+<script src="../js/video.js"></script>
+<script src="../js/content.js"></script>
 <!-- endbuild -->
 
 </body>

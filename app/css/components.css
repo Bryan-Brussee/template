@@ -1,7 +1,10 @@
 @charset "UTF-8";
-figure.share > img {
-  margin-top: .5em;
-  max-width: 25px; }
+.share {
+  margin-bottom: 1em; }
+  .share img {
+    max-width: 25px; }
+  .share a {
+    max-width: 25px; }
 
 .related {
   padding-bottom: 1.5%;
@@ -320,9 +323,6 @@ table td:nth-child(1) {
 @media all and (min-width: 1001px) {
   .timeline li .timeline-panel {
     width: 40%; } }
-
-figure.chart figcaption {
-  color: #d8d8d8; }
 
 #map {
   height: 500px; }

@@ -19,7 +19,8 @@ nav {
     margin: 0;
     padding: 0;
     width: 25%;
-    padding-top: 5px; }
+    padding-top: 5px;
+    padding-left: 5px; }
     nav .logo img {
       float: left;
       max-height: 20px; }
@@ -28,19 +29,29 @@ nav {
     padding: 0;
     width: 50%;
     text-align: center;
-    position: relative;
+    position: fixed;
+    margin-top: -5px;
     left: 25%; }
-    nav .title h4 {
-      width: 100%;
-      margin-top: -5px; }
-    nav .title .dropdown {
+    nav .title ul {
+      list-style: none; }
+    nav .title li {
       display: inline-block;
-      position: relative;
-      margin-left: .25em;
-      top: 2px; }
+      position: relative; }
+    nav .title li#nav-dropdown {
+      max-height: 8px;
+      margin-top: 0px;
+      left: 0px;
+      top: 0px; }
+    nav .title h3 {
+      display: inline-block;
+      margin-top: -10px;
+      width: auto; }
+    nav .title ul.dropdown {
+      display: inline-block;
+      position: relative; }
   nav .social {
     position: relative;
-    top: -25px;
+    top: -47px;
     margin: 0;
     padding: 0;
     width: 25%;
@@ -75,7 +86,7 @@ nav {
   -moz-box-shadow: 0px 5px 5px transparent;
   box-shadow: 0px 5px 5px transparent;
   color: white; }
-  .invisible h4 {
+  .invisible h3 {
     visibility: hidden; }
   .invisible progress {
     color: #f0f0f0;
@@ -84,6 +95,8 @@ nav {
     opacity: 0; }
   .invisible progress::-moz-progress-bar {
     opacity: 0; }
+  .invisible .title {
+    display: none; }
 
 progress {
   /* Positioning */

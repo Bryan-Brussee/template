@@ -1,9 +1,15 @@
 @import 'breakpoints.scss';
 // pulled quotes
-figure.share >img {
-	margin-top: .5em;
+.share {
+	margin-bottom: 1em;
+	img {
 	max-width: 25px;
+	}
+	a{
+		max-width: 25px;
+	}
 }
+
 
 // related
 .related{
@@ -434,11 +440,7 @@ table td:nth-child(1) {
 }
 
 // CHARTS
-figure.chart{
-	figcaption{
-		color: #d8d8d8;
-	}
-}
+
 
 // map
 #map{
