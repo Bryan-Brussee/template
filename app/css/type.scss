@@ -42,12 +42,17 @@ h2{
 	margin-top: 0em;	
 }
 
+.timeline{
+	h2{
+		margin-bottom: .2em;
+	}
+}
 h3{
 	font-family: 'Roboto Slab', serif;
 	font-size: 2em;
 	line-height: 1.5em;
 	margin-top: 1em;
-	margin-bottom: 0em;
+	margin-bottom: .5em;
 	font-weight: 500;
 
 }
@@ -60,7 +65,8 @@ h4{
 	font-weight: 400;
 	line-height: 1.25em;
 	font-size: 1em;
-	margin-bottom: -5em;
+	margin-bottom: 1em;
+	// margin-bottom: -5em;
 	
 }
 
@@ -69,13 +75,18 @@ h5{
 	font-size: 1em;
 	margin-bottom: 1em;
 	margin-top: .25em;
+	line-height: 1.2em;
+
 }
 
 h6{
 	color: #666666;
 	font-size: .8em;
-	margin-top: -.7em;
+	
 	margin-bottom: 1.5em;
+}
+.lead h6{
+	margin-top: -.7em;
 }
 
 p{
@@ -242,6 +253,11 @@ aside.related{
 	h4{
 		font-size: .75em;
 		margin-bottom: 1em;
+	}
+	.sidebar{
+		h6{
+			margin-top: 1em;
+		}
 	}
 
 }

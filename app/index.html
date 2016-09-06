@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
 	<title>template index page</title>
 
 	<meta property="og:url" content="..."/>
@@ -82,13 +84,13 @@
 		<div class="social">
 
 			<ul>
-				<a href="http://www.facebook.com" class="popup">
+				<a href="http://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup">
 					<li class="fb-logo">
 						<img src="img/w.facebook.svg" alt="">
 					</li>
 				</a>
 
-				<a href="http://www.twitter.com" class="popup">
+				<a href="https://twitter.com/intent/tweet?text=Uganda's medical record system discourages treatment among migrant fishermen living with HIV.  http://goo.gl/LPqqjX" class="popup">
 					<li class="twitter-logo">
 						<img src="img/w.twitter.svg" alt="">
 					</li>
@@ -169,7 +171,7 @@
 
 		<h1>Alignment</h1>
 
-		<p>There are nine layout classes to start designing with. The css is found in <code>alignment.css </code>.</p>
+		<p>There are nine layout classes to start designing with</code>. The css is found in <code>alignment.css </code>.</p>
 
 		<h3>Article</h3>
 		<p>The <code>article</code> tag creates the main column on the screen and is where this text is now. It takes up 50% of the screen, with a 25% margin on either side.</p>
@@ -186,7 +188,7 @@
 		<h3>Asides</h3>
 
 
-		<p>There are three type of asides, two that go inside the <code>article</code> tag and one that does not. For each type, there are two sepearte classes for right and left. The two tags that go inside <code>article</code> are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. If the <code>aside class="left"</code> is placed outside of the article, it will float to the edge of the screen.</p>
+		<p>There are three types of asides, two that go inside the <code>article</code> tag and one that does not. For each type, there are two sepearte classes for right and left. The two tags that go inside <code>article</code> are <code>aside class="left"</code> and <code>aside class="left-wide"</code>. If the <code>aside class="left"</code> is placed outside of the article, it will float to the edge of the screen.</p>
 
 		<aside class="right">
 			<h2>Aside class right</h2>
@@ -258,7 +260,7 @@
 
 	<div class="wide">
 		<h3>Wide</h3>
-		<p>The <code>wide</code> class is usually used for media or graphics. It has a width of 75% and a margin-left of 12.5%. You can either fill a div with multiple elements you want wide, or apply it to a single element.</p>	
+		<p>The <code>wide</code> class is usually used for media or graphics. It has a width of 75% and a margin-left of 12.5%. If you need one wide element, like a single picture, you can apply the class to the <code>img</code> tag itself. If you need more things wide you should place all of them inside a <code>&lt;div class="wide"&gt;</code>. Make sure this wide div isn't inside of the <code>article</code> or it will become 75% of the <code>article</code> width instead of the screen's width. </p>	
 	</div>
 
 	<img src="img/test.jpg" data-action="zoom" class="wide" alt="">
@@ -272,8 +274,9 @@
 	...other wide elements...
 &lt;/div&gt;
 
+
 &lt;img src="img/test.jpg" class="wide"&gt;
-	...wide image here...
+	...single wide element here...
 &lt;/div&gt;
 
 &lt;article&gt; ... &lt;/article&gt;
@@ -285,7 +288,7 @@
 
 	<div class="full">
 		<h3>full</h3>
-		<p>The <code>full</code> class is a fullscreen alignment with 100% width and auto height. If you want the navbar to disappear on scrollover surround the full elements with <code>&lt;div id="nav-invisible"&gt;&lt;/div&gt;</code> and <code>&lt;div id="nav-visible"&gt;&lt;/div&gt;</code> </p>
+		<p>The <code>full</code> class is a fullscreen alignment with 100% width and auto height. If you want the navbar to disappear on scrollover place <code>&lt;div id="nav-invisible"&gt;&lt;/div&gt;</code> where you want it to disappear and <code>&lt;div id="nav-visible"&gt;&lt;/div&gt;</code> where you want it to show up again.</p>
 	</div>
 
 	<img src="img/test.jpg" class="full" alt="">
@@ -296,7 +299,7 @@
 
 		<figcaption>Align accompanying text underneath in an article column</figcaption>
 <pre>
-&lt;article&gt; ... &lt;/article&gt;
+&lt;article&gt; ... make sure the article tag is closed off before starting a full tag ... &lt;/article&gt;
 
 	&lt;div id="nav-invisible"&gt;
 
@@ -304,7 +307,7 @@
 
 	&lt;div id="nav-visible"&gt;
 
-&lt;article&gt; ... &lt;/article&gt;
+&lt;article&gt; ... and then put the rest of the content in a new article... &lt;/article&gt;
 </pre>
 
 		<h3>Make your own</h3>
@@ -408,7 +411,7 @@
 		<p>Styles are found in <code>media.css</code>.</p>
 
 		<h3>Images</h3>
-		<p>Supported photos are jpg, png, gif and svg. Include a <code>figcaption</code> underneath for a caption. To add image zooming, include the <code>zoom.js</code>, <code>zoom.css</code> in the file and <code>data-action="zoom"</code> to your image tag. </p>
+		<p>Supported photos are jpg, png, gif and svg. Include a <code>figcaption</code> underneath for a caption. Make sure to minimize images. To add image zooming, include the <code>zoom.js</code>, <code>zoom.css</code> in the file and <code>data-action="zoom"</code> to your image tag. </p>
 			<img src="img/test.jpg" data-action="zoom" alt="">
 			<figcaption>Caption</figcaption>
 
@@ -455,11 +458,11 @@
 		<h3>Pulled quotes</h3>
 		<aside class="right-wide">
 			<h2>If you want a pulledquote tweetable, keep it + url under 140 characters</h2>
-			<h6>James Benedict</h6>
+			<h5>James Benedict</h5>
 
 			<div class="share">
-				<a href="http://www.twitter.com" class="popup"><img src="img/b.twitter.svg" alt=""></a>
-				<a href="http://www.facebook.com" class="popup"><img src="img/facebook.f.svg" alt=""></a>
+				<a href="https://twitter.com/intent/tweet?text=Uganda's medical record system discourages treatment among migrant fishermen living with HIV.  http://goo.gl/LPqqjX" class="popup"><img src="img/b.twitter.svg" alt=""></a>
+				<a href="http://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/facebook.f.svg" alt=""></a>
 			</div>
 
 		</aside>
@@ -813,12 +816,12 @@
 
 	<article>
 		<h1>Ads</h1>
-		<p>There are three different types of ads, all require <code>content.js</code> and <code>content.css</code>. Ads are called content because calling them ads makes it too easy for adblock. These will likely need a lot of tweaking to work with your ad servers. These images won't load until they are reached on the page. This way you can charge per view instead of per page load.</p>
+		<p>There are two different types of ads, both require <code>content.js</code> and <code>content.css</code>. Ads are called content because calling them ads makes it too easy for adblock. These will likely need a lot of tweaking to work with your ad servers.</p>
+
+		<p>These images won't load until they are reached on the page. This way you can charge per view instead of per page load.</p>
 	</article>
 
 	<aside class="right ad">
-
-			
 			<div id="aside-ad" class="ad-passive">
 				<a href="http://jamesbenedict.github.io/" id="adImg2">
 					<!-- <img src="img/aside-ad.jpg" alt=""> -->
@@ -863,14 +866,18 @@
 		<p><strong><a href="https://www.sublimetext.com/">Sublime Text</a></strong> is a text editor with too many useful features to explain here. <a href="https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts">This walkthrough</a> will get you up and going. I recommend installing the <a href="http://emmet.io/">emmet plugin</a> as well.</p>
 
 		
-		<p><strong><a href="http://sass-lang.com/">Sass</a></strong> describes itself as css with superpowers and will make your style sheets easier to work with. It has a ton a <a href="http://sass-lang.com/guide">features</a> like variables and nesting, but if you want to use them you need to send your sass files through a preprocessor. This automaticall converts the sass file to css for the webpage. There <a href="http://sass-lang.com/install">are a few options to do this</a> but my favorite is gulp.</p>
+		<p><strong><a href="http://sass-lang.com/">Sass</a></strong> describes itself as css with superpowers and will make your style sheets easier to work with. <a href="http://sass-lang.com/guide">Features like</a> variables and nesting will prove handy, but if you want them you need to send your sass files through a preprocessor. This automaticall converts the sass file to css for the webpage. There <a href="http://sass-lang.com/install">are a few options to do this</a> but my favorite is gulp.</p>
 
 		<p><strong><a href="http://gulpjs.com/">gulp</a></strong> is a javascript library that automatically does tasks you don't want to do yourself. Want your browser to reload when you change a style? Want minifyed images? Want to convert your sass files to css? Gulp does all these and more with a single command line. <a href="https://css-tricks.com/gulp-for-beginners/">This tutorial should get you up and running.</a></p>
 
 		<h3>File Structure</h3>
-		<p>This project is set up with gulp in mind so I have an <code>app</code> folder where I develop and and <code>dist</code> folder to publish. The gulp tutorial above will have automate certain tasks like image and javascript minification, which are then copied into the <code>dist</code> folder. Performace is a feature so don't overlook these efficiency improvements. If you don't use gulp do these tasks by hand before publishing.</p>
+		<p>This project is set up with gulp in mind so I have an <code>app</code> folder where I develop and and <code>dist</code> folder to publish. The gulp tutorial above  automates certain tasks like image and javascript minification. The minified files are then copied into the <code>dist</code> folder. Performace is a feature so don't overlook these efficiency improvements. If you don't use gulp do these tasks by hand before publishing.</p>
 
-		<p>I like to break up my styles and scripts into smaller files instead of having one master <code>style.css</code> or <code>script.js</code>. This helps me find what I'm looking for faster. Gulp will concatenate all these files into one for the <code>dist</code> version. Fewer requests will make your page load faster.</p>
+		<p>I like to break up my styles and scripts into smaller files instead of having one master <code>style.css</code> or <code>script.js</code>. This helps me find what I'm looking for faster. Gulp will concatenate all these files into one for the <code>dist</code> version. Fewer requests will also make your page load faster.</p>
+
+		<h3>Start Coding</h3>
+
+		<p></p>
 
 	
 

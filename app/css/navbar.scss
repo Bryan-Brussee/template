@@ -7,7 +7,7 @@ nav{
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
-	height: 30px;
+	height: 2.4em;
     width: 100%;
     background-color: #f8f9f9;
     border-bottom: 1px solid #ccc;
@@ -22,7 +22,7 @@ nav{
     	margin: 0;
     	padding: 0;
     	width: 25%;
-    	padding-top: 5px;
+    	padding-top: .5em;
     	padding-left: 5px;
     	img{
     		float: left;
@@ -102,10 +102,10 @@ nav{
     	}
     	img{
 		z-index: 1;
-		max-width: 25px;
+		max-width: 30px;
 		max-height: 20px;
 		margin-left: 20px;
-		margin-top: 20%;
+		margin-top: 15%;
 		margin-bottom: 7%;
 		}
 
@@ -212,7 +212,7 @@ progress {
   position: fixed;
   z-index: -1;
   left: 0;
-  top: 30px;
+  top: 2.4em;
 
   /* Dimensions */
   width: 100%;

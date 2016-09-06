@@ -6,8 +6,8 @@ body, article {
   margin: 0; }
 
 article {
-  width: 50%;
-  margin-left: 25%;
+  width: 90%;
+  margin-left: 5%;
   margin-top: 0%;
   margin-bottom: 0%;
   margin-top: 1em; }
@@ -21,8 +21,6 @@ aside {
   float: left;
   margin: 0em;
   padding: 0em; }
-  aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, aside p, aside figcaption {
-    margin-top: 0em; }
 
 aside.ad {
   width: 20%; }
@@ -64,7 +62,7 @@ article aside.right {
 
 .full {
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 1em;
   width: 100%;
   padding: 0;
   height: 100%; }
@@ -117,14 +115,31 @@ hr {
   margin-top: 1em;
   margin-bottom: 2em; }
 
+footer {
+  width: 100%;
+  background-color: #2b2b2b;
+  color: #eee;
+  height: 3em;
+  position: relative;
+  margin-top: -10px; }
+  footer h5 {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 25px; }
+  footer a {
+    color: #666666; }
+  footer a:hover {
+    text-decoration: underline; }
+
 @media (max-width: 767px) {
   .xs-hidden {
     display: none; }
   .xs-visible {
     display: inline; }
   article {
-    min-width: 85%;
-    margin-left: 7.5%; }
+    min-width: 90%;
+    margin-left: 5%; }
     article .right {
       float: right; }
   .right {
@@ -159,6 +174,20 @@ hr {
     margin-left: 0em; } }
 
 @media (min-width: 768px) {
+  article {
+    width: 80%;
+    margin-left: 10%; }
+  .left-wide {
+    width: 60%;
+    margin: 0 5% 0 -5%; }
+  .right-wide {
+    width: 60%;
+    margin: 0%;
+    margin-right: -5%;
+    margin-left: 5%; }
+  .wide {
+    margin: 0%;
+    width: 100%; }
   .xs-hidden {
     display: none; }
   .xs-visible {
@@ -168,7 +197,24 @@ hr {
   .sm-visible {
     display: inline; } }
 
+@media (min-width: 800px) {
+  article {
+    width: 70%;
+    margin-left: 15%; } }
+
 @media (min-width: 992px) {
+  article {
+    width: 50%;
+    margin: 0 0 0 25%; }
+  .right-wide {
+    width: 70%;
+    margin: 0 -25% 0 5%; }
+  .left-wide {
+    width: 70%;
+    margin: 0 5% 0 -30%; }
+  .wide {
+    width: 75%;
+    margin-left: 14.5%; }
   .xs-hidden {
     display: none; }
   .xs-visible {
@@ -183,6 +229,10 @@ hr {
     display: inline; } }
 
 @media (min-width: 1200px) {
+  .left-wide {
+    margin-left: -30%; }
+  .right-wide {
+    margin-right: -30%; }
   .xs-hidden {
     display: none;
     display: none; }
