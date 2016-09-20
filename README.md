@@ -24,7 +24,7 @@ This is the second version of the template, so bugs might pop up. The only way t
 - [The unsettled](http://specials.idsnews.com/refugees/)
 
 ###Getting Started
-[This page]() contains examples of all the components as well as where to find their styles. 
+[This page](http://www.jamesbenedict.info/template) contains examples of all the components as well as where to find their styles. 
 
 Included in this repository is a project folder to start with. I suggest keeping the example folder unchanged for reference and starting in the new project folder. 
 
