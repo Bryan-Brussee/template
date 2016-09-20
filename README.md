@@ -33,12 +33,15 @@ I like to use [sublime text](https://www.sublimetext.com/) with the [emmet](http
 I'm also a fan of using [Sass](http://sass-lang.com/) to write quicker css. If you're starting out stick with vanilla css. You need a preprocessor to use sass, my favorite of which is [gulp](https://css-tricks.com/gulp-for-beginners/).
 
 ###Best practices
-The first thing judged of any website is how it loads. Don't underlook your primary feature. Keep in mind most online journalism is read on distracting iphones and people will leave if your site lags.
+The first thing judged of any website is how it loads. Don't under look your primary feature. Keep in mind most online journalism is read on distracting iphones and people will leave if your site lags.
 
-- Optimize your images
-- Concatenate 
+Optimize your images, concatenate your js and css files, and remove all unused files. 
 
-##Before publishing
+There will be additional criteria for your website's structure depending on where you publish. It is best to get a sense for them early instead of accommodating them late on deadline.
+
+
+
+
 
 
 
