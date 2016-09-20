@@ -197,10 +197,7 @@ footer {
   .sm-visible {
     display: inline; } }
 
-@media (min-width: 800px) {
-  article {
-    width: 70%;
-    margin-left: 15%; } }
+
 
 @media (min-width: 992px) {
   article {
@@ -214,7 +211,7 @@ footer {
     margin: 0 5% 0 -25%; }
   .wide {
     width: 75%;
-    margin: 0 25% 0 5%; }
+    margin-left: 12.5%; }
   .xs-hidden {
     display: none; }
   .xs-visible {

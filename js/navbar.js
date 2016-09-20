@@ -38,30 +38,30 @@ $(document).on('ready', function() {
 
      		} else if ((position > startChange.top && position < endChange.top)){
      			$('nav').addClass('invisible');
-                $(".logo").html("<img src='../img/w.logo.png'>");
+                $(".logo").html("<img src='img/w.logo.png'>");
                 // $(".dropbtn").html("<img src=''>");
-                $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
-                $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
-                $(".comments-logo").html("<img src='../img/w.comments.svg'>");
+                $(".twitter-logo").html("<img src='img/w.twitter.svg'>");
+                $(".fb-logo").html("<img src='img/w.facebook.svg'>");
+                $(".comments-logo").html("<img src='img/w.comments.svg'>");
 
      		// add a new else if for every change you want
      		} else if ((position > startChange1.top && position < endChange1.top)){
      			$('nav').addClass('invisible');
-                $(".logo").html("<img src='../img/w.logo.png'>");
+                $(".logo").html("<img src='img/w.logo.png'>");
                 // $(".dropbtn").html("<img src=''>");
-                $(".twitter-logo").html("<img src='../img/w.twitter.svg'>");
-                $(".fb-logo").html("<img src='../img/w.facebook.svg'>");
-                $(".comments-logo").html("<img src='../img/w.comments.svg'>");	
+                $(".twitter-logo").html("<img src='img/w.twitter.svg'>");
+                $(".fb-logo").html("<img src='img/w.facebook.svg'>");
+                $(".comments-logo").html("<img src='img/w.comments.svg'>");	
      		// This is the only time you'll need to remove the invisible class
      		} else{
      			$('nav').removeClass('invisible');
-     			$(".logo").html("<img src='../img/b.logo.png'>");
-                // $(".dropbtn").html("<img src='../img/arrow_down.svg'>");
+     			$(".logo").html("<img src='img/b.logo.png'>");
+                // $(".dropbtn").html("<img src='img/arrow_down.svg'>");
 
 
-		        $(".twitter-logo").html("<img src='../img/b.twitter.svg'>");
-		        $(".fb-logo").html("<img src='../img/b.facebook.svg'>");
-                $(".comments-logo").html("<img src='../img/b.comments.svg'>");
+		        $(".twitter-logo").html("<img src='img/b.twitter.svg'>");
+		        $(".fb-logo").html("<img src='img/b.facebook.svg'>");
+                $(".comments-logo").html("<img src='img/b.comments.svg'>");
      		} 	
      	});
 });
