@@ -6,14 +6,18 @@ This template is for people of all skill levels not looking to start from scratc
 This is the second version of the template, so bugs might pop up. The only way to fix them is to know about them, so please contact me at jabenedi@indiana.edu or use this [goolge form](https://goo.gl/forms/ZyCtO9zSwpZdcAiu2).
 
 **Stories developed with current version**
-. . .[Lost in Transition](jamesbenedict.info/uganda/index.html)
+⋅⋅⋅[Lost in Transition](jamesbenedict.info/uganda/index.html)
 
 **Stories developed with old versions**
-. . .[Untreated: Why isn't Indiana using medicine to treat addiction](http://specials.idsnews.com/untreated/)
-. . .[The cleanup man](http://specials.idsnews.com/messes-of-meth/)
-. . .[In the dark](http://specials.idsnews.com/in-the-dark/)
-. . .[Forgotton war, unforgotton soldiers](http://specials.idsnews.com/forgotten-war-unforgotten-soldiers/)
-. . .[The unsettled](http://specials.idsnews.com/refugees/)
+⋅⋅⋅[Untreated: Why isn't Indiana using medicine to treat addiction](http://specials.idsnews.com/untreated/)
+
+⋅⋅⋅[The cleanup man](http://specials.idsnews.com/messes-of-meth/)
+
+⋅⋅⋅[In the dark](http://specials.idsnews.com/in-the-dark/)
+
+⋅⋅⋅[Forgotton war, unforgotton soldiers](http://specials.idsnews.com/forgotten-war-unforgotten-soldiers/)
+
+⋅⋅⋅[The unsettled](http://specials.idsnews.com/refugees/)
 
 ###Getting Started
 [This page]() contains examples of all the components as well as where to find their styles. 
